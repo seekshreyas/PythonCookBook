@@ -11,6 +11,7 @@ Notes :: Ch1 ("Text")
     - __ISO-8859-1__ : international standard
 - Prepending `r` when defining a string keeps it __raw__
 - Preprending `u` when defining a string keeps it __unicode__
+- __EAFP__ : "Its easier to ask for __forgiveness__ than __permission__ "
 
 ## Important Modules
 
@@ -24,13 +25,16 @@ Notes :: Ch1 ("Text")
 | `re` | regular expressions |
 
 
-## Important Methogs
+## Important Methods
 | Method Name | Description |
 |:------------|:------------|
 |`.isdigit()` | all characters are digits |
 | `.toupper()` | convert to uppercase |
 | `<string>.count(<substring>)` | count of instances of substring in string |
-
+| `ord` | converts character to numeric code |
+| `chr` | converts numeric code to character |
+| `unichr` | convert unicode number to character |
+| `isinstance(obj, basestring)` | check if an object is a string |
 
 ## Good Snippets
 ```
@@ -48,3 +52,5 @@ mystr[1::2] # "ysrn"
 ```
 results = map(do_something, mystr)
 ```
+
+### Converting between character & numeric codes
